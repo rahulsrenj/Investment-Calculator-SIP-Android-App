@@ -7,8 +7,8 @@ public class InvestmentData {
     private double returns;
     private int year;
     public InvestmentData(double principal, double returns, int year) {
-        this.principal = principal;
-        this.returns = returns;
+        this.principal = Math.abs(principal);
+        this.returns = Math.abs(returns);
         this.year = year;
     }
 
